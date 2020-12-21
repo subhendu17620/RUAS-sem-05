@@ -1,0 +1,195 @@
+
+
+
+1 - keywords: int
+2 - identifier: main
+3 - seperator: (
+4 - seperator: )
+
+5 - seperator: {
+
+6 - keywords: int
+7 - identifier: num1
+8 - seperator: ,
+9 - identifier: num2
+10 - seperator: ;
+
+11 - keywords: float
+12 - identifier: result
+13 - seperator: ;
+
+14 - keywords: char
+15 - identifier: ch
+16 - seperator: ;
+
+
+17 - identifier: printf
+18 - seperator: (
+19 - literal: "Enter first number: "
+20 - seperator: )
+21 - seperator: ;
+
+22 - identifier: scanf
+23 - seperator: (
+24 - literal: "%d"
+25 - seperator: ,
+26 - operator: &
+27 - identifier: num1
+28 - seperator: )
+29 - seperator: ;
+
+30 - identifier: printf
+31 - seperator: (
+32 - literal: "Enter second number: "
+33 - seperator: )
+34 - seperator: ;
+
+35 - identifier: scanf
+36 - seperator: (
+37 - literal: "%d"
+38 - seperator: ,
+39 - operator: &
+40 - identifier: num2
+41 - seperator: )
+42 - seperator: ;
+
+
+43 - identifier: printf
+44 - seperator: (
+45 - literal: "Choose operation to perform (+,-,*,/,%): "
+46 - seperator: )
+47 - seperator: ;
+
+48 - identifier: scanf
+49 - seperator: (
+50 - literal: " %c"
+51 - seperator: ,
+52 - operator: &
+53 - identifier: ch
+54 - seperator: )
+55 - seperator: ;
+
+
+56 - identifier: result
+57 - operator: =
+58 - literal: 0
+59 - seperator: ;
+
+60 - keywords: switch
+61 - seperator: (
+62 - identifier: ch
+63 - seperator: )
+
+64 - seperator: {
+
+65 - keywords: case
+66 - literal: '+'
+67 - seperator: :
+
+68 - identifier: result
+69 - operator: =
+70 - identifier: num1
+71 - operator: +
+72 - identifier: num2
+73 - seperator: ;
+
+74 - keywords: break
+75 - seperator: ;
+
+
+76 - keywords: case
+77 - literal: '-'
+78 - seperator: :
+
+79 - identifier: result
+80 - operator: =
+81 - identifier: num1
+82 - operator: -
+83 - identifier: num2
+84 - seperator: ;
+
+85 - keywords: break
+86 - seperator: ;
+
+
+87 - keywords: case
+88 - literal: '*'
+89 - seperator: :
+
+90 - identifier: result
+91 - operator: =
+92 - identifier: num1
+93 - operator: *
+94 - identifier: num2
+95 - seperator: ;
+
+96 - keywords: break
+97 - seperator: ;
+
+
+98 - keywords: case
+99 - literal: '/'
+100 - seperator: :
+
+101 - identifier: result
+102 - operator: =
+103 - seperator: (
+104 - keywords: float
+105 - seperator: )
+106 - identifier: num1
+107 - operator: /
+108 - seperator: (
+109 - keywords: float
+110 - seperator: )
+111 - identifier: num2
+112 - seperator: ;
+
+113 - keywords: break
+114 - seperator: ;
+
+
+115 - keywords: case
+116 - literal: '%'
+117 - seperator: :
+
+118 - identifier: result
+119 - operator: =
+120 - identifier: num1
+121 - operator: %
+122 - identifier: num2
+123 - seperator: ;
+
+124 - keywords: break
+125 - seperator: ;
+
+126 - keywords: default
+127 - seperator: :
+
+128 - identifier: printf
+129 - seperator: (
+130 - literal: "Invalid operation.\n"
+131 - seperator: )
+132 - seperator: ;
+
+133 - seperator: }
+
+
+134 - identifier: printf
+135 - seperator: (
+136 - literal: "Result: %d %c %d = %f\n"
+137 - seperator: ,
+138 - identifier: num1
+139 - seperator: ,
+140 - identifier: ch
+141 - seperator: ,
+142 - identifier: num2
+143 - seperator: ,
+144 - identifier: result
+145 - seperator: )
+146 - seperator: ;
+
+147 - keywords: return
+148 - literal: 0
+149 - seperator: ;
+
+150 - seperator: }
