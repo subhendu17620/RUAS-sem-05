@@ -35,7 +35,9 @@ void *consumer(void *cno)
         sem_wait(&full);
         pthread_mutex_lock(&mutex);
         int item = spooler[out];
+        printf("----- ");
         printf("PRINTER : Prints document %d from index %d\n", item, out);
+
         out = (out + 1) % SpoolerSize;
         pthread_mutex_unlock(&mutex);
         sem_post(&empty);
@@ -50,7 +52,7 @@ int main()
     sem_init(&empty, 0, SpoolerSize);
     sem_init(&full, 0, 0);
 
-    int a[5] = {1, 2, 3, 4, 5}; //Just used for numbering the producer and consumer
+    int a[5] = {1, 2, 3, 4, 5};
 
     for (int i = 0; i < 5; i++)
     {
